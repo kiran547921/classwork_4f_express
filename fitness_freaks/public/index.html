@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Membership - FitLife Gym</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Welcome to FitLife Gym</h1>
+    <nav>
+        <a href="index.html">Home</a> | 
+        <a href="about.html">About</a> | 
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Membership Plans</h2>
+    <div class="membership-plans">
+        <div class="plan">
+            <img src="/airTicket/public/assets/img/123.png" alt="Basic Plan" class="plan-image">
+            <h3>Basic Plan</h3>
+            <p>$30/month</p>
+            <p>Access to all gym equipment</p>
+            <button>Join Now</button>
+        </div>
+        <div class="plan">
+            <img src="/airTicket/public/assets/img/234.png" alt="Standard Plan" class="plan-image">
+            <h3>Standard Plan</h3>
+            <p>$50/month</p>
+            <p>Includes group classes</p>
+            <p>Access to swimming pool</p>
+            <button>Join Now</button>
+        </div>
+        <div class="plan">
+            <img src="/airTicket/public/assets/img/345.png" alt="Premium Plan" class="plan-image">
+            <h3>Premium Plan</h3>
+            <p>$80/month</p>
+            <p>Personal trainer support</p>
+            <p>Access to all areas and classes</p>
+            <button>Join Now</button>
+        </div>
+    </div>
+
+    <h2>Sign Up for Membership</h2>
+    <form action="/submit" method="POST">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="membership">Choose Membership Plan</label>
+        <select id="membership" name="membership">
+            <option value="basic">Basic Plan - $30/month</option>
+            <option value="standard">Standard Plan - $50/month</option>
+            <option value="premium">Premium Plan - $80/month</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2024 FitLife Gym. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
